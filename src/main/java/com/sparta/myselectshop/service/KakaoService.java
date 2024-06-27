@@ -52,7 +52,7 @@ public class KakaoService {
         // 4. JWT 토큰 반환
         String createToken = jwtUtil.createToken(kakaoUser.getUsername(), kakaoUser.getRole());
 
-        return null;
+        return createToken;
     }
 
     private String getToken(String code) throws JsonProcessingException {
